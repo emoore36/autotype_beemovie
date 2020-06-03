@@ -4,13 +4,9 @@ import pyautogui, time
 # static variables
 #
 
-x = 564 - 436
-
 gui = pyautogui
 keys = gui.KEYBOARD_KEYS
-narcoServerMousePos = {"x": 77, "y": 436}
 dumbassNerdsMousePos = {"x": 77, "y": 564}
-sedonaBoisMousePos = {"x": 77, "y": 564 + x}
 chatBarMousePos = {"x": 781, "y": 1837}
 notePadMousePos = {"x": 2264, "y":781}
 wordList = []
@@ -35,13 +31,6 @@ def openApp(appName, secondsToWait):
         gui.press(char)
     gui.press("enter")
     time.sleep(secondsToWait)
-
-# types each character in string 'word' individually, separated by a return key
-def typeWordByChar(word):
-    for char in word:
-     gui.press(char)
-     gui.press("enter")
-     time.sleep(0.5)
 
 # types each word in string 'phrase' individually, separated by a return key
 def typePhraseByWord(phrase):
