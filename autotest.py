@@ -89,7 +89,7 @@ def parseFile(fileName):
     file.close()
 
 # execute process
-parseFile("input.txt")
+parseFile("script.txt")
 
 openApp("discord", 3)
 
